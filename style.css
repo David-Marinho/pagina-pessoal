@@ -1,0 +1,288 @@
+/*--------------------------------geral--------------------------------------*/
+
+:root{
+    --color-1: #02779E;
+    --color-2: #88ABC2;
+}
+
+h1, h2, h3, p{
+    margin-top: 0px; 
+    color: rgb(206, 206, 206);  
+}
+
+body{
+    margin: 0px;
+    background-color: #303030;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    text-align: right;
+    width: 500px;
+    height: 17px;
+}
+
+.foco{
+    color: var(--color-2);
+}
+
+.titulo{
+    text-align: center;
+}
+
+/*--------------------------------icones--------------------------------------*/
+.html{
+    background-color: #E34F26; 
+}
+
+.html:hover{
+    background-color: #ad3c1c;
+}
+
+.css{
+    background-color: #1572B6;
+}
+
+.css:hover{
+    background-color: #105a8f;
+}
+
+.js{
+    background-color: #ddc61b;
+}
+
+.js:hover{
+    background-color: #bba819;
+}
+
+.python{
+    background-color: #427197;
+}
+
+.python:hover{
+    background-color: #355b7a;
+}
+
+.csharp{
+    background-color: #7A3398;
+}
+
+.csharp:hover{
+    background-color: #5b2672;
+}
+
+/*--------------------------------header--------------------------------------*/
+
+#menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 75px -10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+}
+
+#menu strong{
+    margin-left: 10px;
+}
+
+.div-logo{
+    display: flex;
+    justify-content: left;
+}
+
+.img-logo{
+    width: 20px;
+}
+
+.item{
+    margin-right: 20px;
+}
+
+/*--------------------------------capa--------------------------------------*/
+
+#capa{
+    background-image: url(imagens/capa.jpg);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.titulo{
+    filter: drop-shadow(1px 1px 2px #000000c9);
+}
+
+.perfil{
+    float: left;
+    position: relative;
+    bottom: 155px;
+    left: 10px;
+    border-radius: 100%;
+}
+
+/*--------------------------------sobre--------------------------------------*/
+
+#sobre{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+
+.info{
+    width: 500px;
+    margin-right: 20px;
+}
+
+.texto{
+    text-align: justify;
+}
+
+.sobre-img{
+    width: 700px;
+    height: 280px;
+    border-radius: 5px;
+}
+
+/*--------------------------------habilidades--------------------------------------*/
+
+#habilidades{
+    text-align: center;
+}
+
+.conjunto-icones{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.conjunto-icones div{
+    margin-left: 20px;
+}
+
+.icone img{
+    margin-top: 10px;
+}
+
+.icone{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/*--------------------------------botao--------------------------------------*/
+
+.github{
+    border: 0px;
+    background-color: var(--color-1);
+    padding: 20px 60px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    border: 1px solid #8b8b8b;
+}
+
+/*--------------------------------projetos--------------------------------------*/
+
+#projetos{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.conjunto-de-projetos{
+    margin-left: 5.6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+}
+
+.projeto{
+    width: 275px;
+    height: 155px;
+    background-color: var(--color-1);
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.linguagem{
+    position: relative;
+    bottom: 65px;
+    right: 25px;
+    float: left;
+}
+
+.descriçao-projeto{
+    margin-left: 25px;
+    text-align: justify;
+    width: 220px;
+}
+
+/*--------------------------------contato--------------------------------------*/
+
+#contato{
+    background-color: var(--color-1);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+input{
+    border: 0px;
+    border-radius: 3px;
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+
+.botao{
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px 30px;
+    background-color: #3493b3;
+    color: white;
+    transition: 0.5s;
+}
+
+.botao:hover{
+    background-color: var(--color-2);
+    color: black;
+}
+
+/*--------------------------------redes--------------------------------------*/
+
+#redes{
+    text-align: center;
+}
+
+.redes-icons{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.redes-icons a{
+    margin-right: 30px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.redes-icons a:hover{
+    background-color: var(--color-1);
+}
