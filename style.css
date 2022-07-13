@@ -1,8 +1,10 @@
 /*--------------------------------geral--------------------------------------*/
 
 :root{
-    --color-1: #02779E;
-    --color-2: #88ABC2;
+    --cor-principal: #119bc9;
+    --cor-principal-claro: #24c6fc;
+    --titulo-texto: #88ABC2;
+    --titulo-texto-escuro: #003c64;
 }
 
 h1, h2, h3, p{
@@ -13,7 +15,7 @@ h1, h2, h3, p{
 body{
     margin: 0px;
     background-color: #303030;
-    
+    color: white;
 }
 
 ul, a{
@@ -22,14 +24,23 @@ ul, a{
 }
 
 .foco{
-    color: var(--color-2);
+    color: var(--titulo-texto);
+}
+
+.foco-escuro{
+    color: var(--titulo-texto-escuro);
 }
 
 .titulo{
     text-align: center;
 }
 
+section{
+    margin-bottom: 50px;
+}
+
 /*--------------------------------icones--------------------------------------*/
+
 .html{
     background-color: #E34F26; 
 }
@@ -80,9 +91,9 @@ ul, a{
     align-items: center;
     position: fixed;
     padding: 10px 0px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 4px 75px -10px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.308);
+    backdrop-filter: blur(5px);
+    z-index: 2;
 }
 
 #topo strong{
@@ -117,7 +128,6 @@ ul, a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .titulo{
@@ -137,7 +147,6 @@ ul, a{
 #sobre{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
     margin-right: 10px;
     padding-top: 50px;
 }
@@ -183,43 +192,44 @@ ul, a{
     height: 50px;
 }
 
-
-
 /*--------------------------------botao--------------------------------------*/
 
 .github{
-    border: 0px;
-    background-color: var(--color-1);
-    padding: 20px 60px;
+    border: 1px solid black;
+    background-color: var(--cor-principal);
+    padding: 10px 30px;
     border-radius: 5px;
-    margin-bottom: 50px;
-    border: 1px solid #8b8b8b;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+.github:hover{
+    background-color: var(--cor-principal-claro);
+    box-shadow: 1px 1px 10px 6px var(--cor-principal-claro);
+    color: black;
 }
 
 /*--------------------------------projetos--------------------------------------*/
 
 #projetos{
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .conjunto-de-projetos{
     margin-left: 5.6%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 1200px;
 }
 
 .projeto{
     width: 275px;
     height: 155px;
-    background-color: var(--color-1);
-    border: 1px solid #8b8b8b;
+    background-color: var(--cor-principal);
+    box-shadow: 10px 10px black;
     border-radius: 5px;
-    margin-left: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .linguagem{
@@ -238,10 +248,9 @@ ul, a{
 /*--------------------------------contato--------------------------------------*/
 
 #contato{
-    background-color: var(--color-1);
+    background-color: var(--cor-principal);
     text-align: center;
     padding: 20px;
-    margin-bottom: 50px;
 }
 
 input{
@@ -249,21 +258,6 @@ input{
     border-radius: 3px;
     padding: 5px 20px;
     margin-right: 10px;
-}
-
-.botao{
-    border: 0px;
-    border-radius: 10px;
-    padding: 5px 30px;
-    background-color: #3493b3;
-    color: white;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.botao:hover{
-    background-color: var(--color-2);
-    color: black;
 }
 
 /*--------------------------------redes--------------------------------------*/
@@ -274,8 +268,7 @@ input{
 
 .redes-icons{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .redes-icons a{
@@ -289,5 +282,5 @@ input{
 }
 
 .redes-icons a:hover{
-    background-color: var(--color-1);
+    background-color: var(--cor-principal);
 }
